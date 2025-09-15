@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live cell counter</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="/src/script.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="container h-screen flex justify-center items-center flex-col overflow-hidden"
+    >
+      <div
+        class="absolute bg-[url(/src/Manga-Shrine.png)] inset-0 opacity-100"
+      ></div>
+      <div
+        class="bg-no-repeat relative z-1 bg-auto flex justify-center items-center text-3xl font-semibold font-Bungee p-[12%] max-h-1/5 top-10 mb-10"
+      >
+        LIVE CELL COUNTER
+      </div>
+      <div
+        class="display relative z-1 flex flex-col min-w-5 max-w-[70%] min-h-5 p-5 text-black rounded-2xl gap-30"
+      >
+        <div class="live-cells flex justify-center items-center gap-5">
+          <img
+            class="max-w-full h-auto block"
+            src="src/live_cell.gif"
+            alt="guy punching"
+          />
+          <div class="font-Bungee text-3xl">
+            Live cells: <span class="live-cell-count">0</span>
+          </div>
+        </div>
+        <div
+          class="dead-cells flex justify-center items-center relative right-7"
+        >
+          <img class="w-30 block" src="src/dead_cell.gif" alt="zombie" />
+          <div class="font-Bungee text-3xl">
+            Dead cells: <span class="dead-cell-count">0</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 relative z-1 flex justify-center items-start gap-10 p-30"
+      >
+        <button
+          class="decrement-btn min-w-[17vw] h-10 p-3 bg-red-600 font-bold text-xl text-white rounded-2xl flex justify-center items-center"
+        >
+          Dead
+        </button>
+
+        <button
+          class="reset-btn min-w-[17vw] h-10 p-3 bg-green-600 font-bold text-xl text-white rounded-2xl flex justify-center items-center"
+        >
+          RESET
+        </button>
+
+        <button
+          class="increment-btn min-w-[17vw] h-10 p-3 bg-sky-600 font-bold text-xl text-white rounded-2xl flex justify-center items-center"
+        >
+          Alive
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

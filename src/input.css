@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-Bungee: "Bungee Tint", sans-serif;
+}
