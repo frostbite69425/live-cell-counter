@@ -202,15 +202,6 @@
   .right-1\.5 {
     right: calc(var(--spacing) * 1.5);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .bottom-5 {
-    bottom: calc(var(--spacing) * 5);
-  }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
   .bottom-\[0\.7px\] {
     bottom: 0.7px;
   }
@@ -234,9 +225,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .mt-auto {
-    margin-top: auto;
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -316,14 +304,14 @@
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
+  .gap-\[-5\] {
+    gap: -5;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
-  }
-  .overflow-y-hidden {
-    overflow-y: hidden;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
